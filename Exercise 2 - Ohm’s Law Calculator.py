@@ -45,3 +45,5 @@ elif calculator_type.upper() == "I":
     current_calculator()
 elif calculator_type.upper() == "R":
     resistance_calculator()
+else:
+    print("Please choose from the options")

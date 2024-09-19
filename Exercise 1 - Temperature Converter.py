@@ -1,4 +1,4 @@
-print("this is Rheo's temperature converter\nthis converts Fahrenheit to Celsius and vice versa")
+print("Welcome to Rheo's temperature converter\nthis converts Fahrenheit to Celsius and vice versa")
 def temperature_Converter():
     try:
         user_temperature_value = input("Enter the temperature that you want to convert. e.g. 34\n")
