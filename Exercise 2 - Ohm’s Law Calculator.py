@@ -1,9 +1,18 @@
 print("Welcome to Rheo's Ohm's Law Calculator\nthis calculator assumes that all the values are in eiter ampere, volts, and ohms")
-calculator_type = input("""What do you want to Calculate: V, I, or R
-Voltage - V
+print("""Voltage - V
 Current - I
-Resistance - R
-""" )
+Resistance - R""")
+def initialization():
+    calculator_type = input("What do you want to Calculate: V, I, or R ")
+    if calculator_type.upper() == "V":
+        voltage_calculator()
+    elif calculator_type.upper() == "I":
+        current_calculator()
+    elif calculator_type.upper() == "R":
+        resistance_calculator()
+    else:
+        print("Please choose from the options")
+        initialization()
 
 def voltage_calculator():
     try:
@@ -38,12 +47,4 @@ def resistance_calculator():
     except ZeroDivisionError:
         print("You cannot divide by zero")
         
-
-if calculator_type.upper() == "V":
-    voltage_calculator()
-elif calculator_type.upper() == "I":
-    current_calculator()
-elif calculator_type.upper() == "R":
-    resistance_calculator()
-else:
-    print("Please choose from the options")
+initialization()
