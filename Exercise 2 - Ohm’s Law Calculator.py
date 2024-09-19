@@ -13,7 +13,6 @@ def initialization():
     else:
         print("Please choose from the options")
         initialization()
-
 def voltage_calculator():
     try:
         current = float(input("Please enter your current reading "))
