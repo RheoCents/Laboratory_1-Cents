@@ -5,7 +5,7 @@ def diamond_printer():
         user_odd_integer = int(input("Please enter an odd integer: "))
         if user_odd_integer % 2 != 0:  
             for i in range(user_odd_integer // 2 + 1):
-                spaces = ' ' * (user_odd_integer // 2 - i)
+                spaces = ' ' * (user_odd_integer // 2 - i)  
                 stars = '*' * (2 * i + 1)
                 print(spaces + stars)
             
